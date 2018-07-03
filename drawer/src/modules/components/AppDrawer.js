@@ -1,12 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import { withStyles } from 'material-ui/styles';
-import List from 'material-ui/List';
-import Drawer from 'material-ui/Drawer';
-import SwipeableDrawer from 'material-ui/SwipeableDrawer';
-import Divider from 'material-ui/Divider';
-import Hidden from 'material-ui/Hidden';
+import { withStyles } from '@material-ui/core/styles';
+import List from '@material-ui/core/List';
+import Drawer from '@material-ui/core/Drawer';
+import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
+import Divider from '@material-ui/core/Divider';
+import Hidden from '@material-ui/core/Hidden';
 import AppDrawerNavItem from './AppDrawerNavItem';
 import { pageToTitle } from './../utils/helpers';
 

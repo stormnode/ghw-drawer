@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { withStyles } from 'material-ui/styles';
-import { ListItem } from 'material-ui/List';
-import Button from 'material-ui/Button';
-import Collapse from 'material-ui/transitions/Collapse';
+import { withStyles } from '@material-ui/core/styles';
+import ListItem from '@material-ui/core/ListItem';
+import Button from '@material-ui/core/Button';
+import Collapse from '@material-ui/core/Collapse';
 import { Link } from 'react-router-dom';
 
 const styles = theme => ({
@@ -81,7 +81,7 @@ class AppDrawerNavItem extends React.Component {
         <ListItem className={classes.itemLeaf} disableGutters {...other}>
           <Button
             component={props => (
-              <Link variant="button" to={href} href={href} {...props} />
+              <Link variant="button" activeClassName={classes.active} to={href} href={href} {...props} />
             )}
             className={classNames(classes.buttonLeaf, `depth-${depth}`)}
             disableRipple

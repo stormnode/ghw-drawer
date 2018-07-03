@@ -6,11 +6,12 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import { withStyles } from "material-ui/styles";
-import GridList, { GridListTile } from "material-ui/GridList";
+import { withStyles } from "@material-ui/core/styles";
+import GridList from "@material-ui/core/GridList";
+import GridListTile from "@material-ui/core/GridListTile";
 import GhCardNoImage from "./../cards/GhCardNoImage";
 import GhCard from "./../cards/GhCard";
-import lightGreen from "material-ui/colors/lightGreen";
+import lightGreen from "@material-ui/core/colors/lightGreen";
 
 const styles = theme => ({
   root: {
