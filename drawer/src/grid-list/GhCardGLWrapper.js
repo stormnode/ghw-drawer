@@ -1,18 +1,9 @@
 import React from "react";
 import GhCardGL from "./GhCardGL";
 
-/*
 const repoMap = {
   repo1: "material-ui.json",
   repo2: "html5-node-diagram.json",
-  repo3: "nodejs-sandboxed-fs.json",
-  repo4: "ivy.json"
-};
-*/
-
-const repoMap = {
-  repo1: "html5-node-diagram.json",
-  repo2: "ivy.json",
   repo3: "nodejs-sandboxed-fs.json"
 };
 
