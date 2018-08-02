@@ -1,6 +1,15 @@
 import React from "react";
 import GhCardGL from "./GhCardGL";
 
+/*
+const repoMap = {
+  repo1: "material-ui.json",
+  repo2: "html5-node-diagram.json",
+  repo3: "nodejs-sandboxed-fs.json",
+  repo4: "ivy.json"
+};
+*/
+
 const repoMap = {
   repo1: "html5-node-diagram.json",
   repo2: "ivy.json",
@@ -8,7 +17,7 @@ const repoMap = {
 };
 
 const template =
-  "https://raw.githubusercontent.com/stormasm/mui-card-file/master/src/data/repos/";
+  "https://raw.githubusercontent.com/stormasm/ghdata/master/ghw/data1/";
 
 class GhCardGLWrapper extends React.Component {
   constructor(props) {
@@ -17,7 +26,7 @@ class GhCardGLWrapper extends React.Component {
     const { match } = props;
 
     this.state = {
-      data: {},
+      data: [],
       isLoading: false,
       error: null,
       repoName: repoMap[match.params.repo],
@@ -79,7 +88,7 @@ class GhCardGLWrapper extends React.Component {
   }
 
   render() {
-    const hits = this.state.data.hits || [];
+    const hits = this.state.data || [];
 
     if (this.state.error) {
       return <p>{this.state.error.message}</p>;
